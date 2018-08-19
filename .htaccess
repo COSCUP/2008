@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteBase /2008
+
+RewriteCond	%{HTTP_HOST}	en.coscup.org
+	RewriteRule	^(.*)$	/2008-en/$1	[L]
+
+RewriteCond     %{HTTP_HOST}    www.coscup.org
+        RewriteRule     ^(.*)$  http://coscup.org/2008/$1     [R,L]
+
